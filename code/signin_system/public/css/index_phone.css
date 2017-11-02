@@ -1,0 +1,65 @@
+#btn_start, #btn_end {
+	padding: 2% 2%
+}
+
+.time_tag, .time_set {
+	display: none;
+}
+
+.clone_block {
+	display: none;
+}
+
+/*index*/
+.clone_block-start {
+	display: none;
+}
+
+.li-start-label {
+	text-align: center;
+	font-size: 23px;
+	color: #8f8f94
+}
+
+
+/*actions*/
+.countdown {
+	display: none;
+}
+
+.mui-progressbar-success span {
+	background-color: #4cd964;
+}
+.mui-progressbar-warning span {
+	background-color: #f0ad4e;
+}
+.mui-progressbar-danger span {
+	background-color: red;
+}
+
+
+/* listlog */
+
+.title {
+	margin: 20px 15px 10px;
+	color: #6d6d72;
+	font-size: 18px;
+}
+
+/* personlog */
+.ul-li-img {
+	width: 15%;
+	height: 15%;
+	float: left;
+	padding-left: 2px;
+	border-radius:10px
+}
+
+.ul-li-span {
+	height: 15%;
+	width: 75%;
+	padding-top: 4%;
+	float: right;
+	display: block;
+	font-size: 23px
+}
