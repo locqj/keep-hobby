@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+    body {
+        background-color: #2c2c3a;
+    }
+    #footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+        bottom: 0px;
+        width: 100%;
+}
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 50px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}  
+#header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c2c3a;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+    #back{
+        color: white;
+        font-family: sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top:50%;
+        left: 5%;   
+        
+    }
+ #setting{
+        color: white;
+        font-family: sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top:46%;
+        right: 5%;   
+        
+    }
+    #muneicon1{
+        width: 72px;
+         position: absolute;
+        bottom: 20%;
+        left: 10%;
+        
+    }
+    #muneicon2{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        left:34%;
+        
+    }
+    #muneicon3{
+        width: 63px;
+         position: absolute;
+        bottom: 20%;
+        left: 57%;
+        
+    }
+    #muneicon4{
+        width: 87px;
+         position: absolute;
+        bottom: 20%;
+        left: 80%;
+        
+    }
+    #muneicon5{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        left: 5%;
+        
+    }
+    #muneicon6{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        right: 5%;
+        
+    }
+    .icone{
+    display: inline-block;
+        width: 20%;
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+</style>
+</head>
+<body>
+   
+    <header id="header">
+<ul>
+  <li><a id ="back" href="#homepage">Back</a></li>
+  
+ 
+</ul>
+    </header>
+    <div id ="content">
+        <img src="stayyelloe.png" class ="icone">
+        <img  src ="addsugaricon.png" class ="icone">
+        <img  src ="popyellow.png" class ="icone">
+        
+    </div>
+    
+    
+    
+<footer>    
+<ul id="footer">
+  <li><a class="active" href="homepage.html"><img src="menuh.png" id ="muneicon1"></a></li>
+  <li><a href="diary.html"> <img src="diary.png" id ="muneicon2"></a></li>
+  <li><a href="sticker.html"><img src="sticker.png" id ="muneicon3"></a></li>
+  <li><a href="myaccount.html"><img src="account.png" id ="muneicon4"></a></li>
+</ul>
+    </footer>
+ <script>
+        var muneicon1 = document.getElementById("muneicon1");
+       var muneicon2 = document.getElementById("muneicon2");
+        var muneicon3 = document.getElementById("muneicon3");
+        var muneicon4 = document.getElementById("muneicon4");
+     var back = document.getElementById("back");
+     
+     back.addEventListener("click",function(){
+         window.location = "homepage.html";
+     })
+     muneicon1.addEventListener("click",function(){
+         muneicon1.src ="homeMenue.png";
+          muneicon2.src ="diary.png";
+              muneicon3.src ="sticker.png";
+             
+             
+         })
+      
+         muneicon2.addEventListener("click",function(){
+             muneicon1.src ="menuh.png";
+              muneicon2.src ="dairymenue.png";
+              muneicon3.src ="sticker.png";
+             muneicon4.src ="account.png";
+            
+             
+             
+         })
+          muneicon3.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+              muneicon3.src ="stickermeune.png";
+                muneicon2.src ="diary.png";
+             muneicon4.src ="account.png";
+             
+              
+             
+         })
+           muneicon4.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+             muneicon3.src ="sticker.png";
+                muneicon2.src ="diary.png";
+               muneicon4.src ="accountmenue.png";
+           
+             
+         })
+        
+        
+    </script>
+</body>
+</html>

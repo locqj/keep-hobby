@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+    
+    #footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+        bottom: 0px;
+        width: 100%;
+        
+}
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 50px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}  
+#header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cc9519;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+    #back{
+        color: white;
+        font-family: sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top:50%;
+        left: 5%;   
+        
+    }
+ #setting{
+        color: white;
+        font-family: sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top:46%;
+        right: 5%;   
+        
+    }
+    #muneicon1{
+        width: 72px;
+         position: absolute;
+        bottom: 20%;
+        left: 10%;
+        
+    }
+    #muneicon2{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        left:34%;
+        
+    }
+    #muneicon3{
+        width: 63px;
+         position: absolute;
+        bottom: 20%;
+        left: 57%;
+        
+    }
+    #muneicon4{
+        width: 87px;
+         position: absolute;
+        bottom: 20%;
+        left: 80%;
+        
+    }
+    #muneicon5{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        left: 5%;
+        
+    }
+    #muneicon6{
+        width: 60px;
+         position: absolute;
+        bottom: 20%;
+        right: 5%;
+        
+    }
+    .icone{
+    display: inline-block;
+        width: 20%;
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+    #pro{
+        z-index: 1;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:10%;
+        margin: auto;
+    }
+    #ach {
+        font-family: sans-serif;
+        font-size: 50px;
+        position: absolute;
+        color: #dddde8;
+        top:40%;
+        left: 10%;
+        
+    }
+    #profress{
+        font-family: sans-serif;
+        font-size: 50px;
+        position: absolute;
+        color:#cc9519;
+        top:40%;
+        right: 10%;
+        
+    }
+    #quit{
+        width:100%;
+        height: 20%;
+        box-shadow: 10px 10px grey;
+    }
+    #qs{
+        color: black;
+        font-size: 60px;
+         position: absolute;
+        top:50%;
+        left: 10%;
+        
+    }
+    #days{
+        position: absolute;
+         font-size: 60px;
+        color:#cc9519;
+        top:50%;
+        right: 10%;
+    }
+</style>
+</head>
+<body>
+   
+    <header id="header">
+<ul>
+  <li><a id ="back" href="#home">Back</a></li>
+  <li><a href="#news" id = "setting" > Setting</a></li>
+ 
+</ul>
+    </header>
+    <div id ="content">
+    <img src="pro.png" id = "pro">
+        
+    </div>
+    <div>
+        <h3 id = "ach"><b>Achievement</b></h3>
+        <h3 id = "profress"><b>Progress</b></h3>  
+    
+    </div>
+    <div id ="quit">
+       <p id ="qs"> Quit Smoking</p> 
+        <p id="days">10 Days</p> 
+    </div>
+    
+    
+<footer>    
+<ul id="footer">
+  <li><a class="active" href="#home"><img src="menuh.png" id ="muneicon1"></a></li>
+  <li><a href="#news"> <img src="diary.png" id ="muneicon2"></a></li>
+  <li><a href="#contact"><img src="sticker.png" id ="muneicon3"></a></li>
+  <li><a href="#about"><img src="account.png" id ="muneicon4"></a></li>
+</ul>
+    </footer>
+ <script>
+        var muneicon1 = document.getElementById("muneicon1");
+       var muneicon2 = document.getElementById("muneicon2");
+        var muneicon3 = document.getElementById("muneicon3");
+        var muneicon4 = document.getElementById("muneicon4");
+     muneicon1.addEventListener("click",function(){
+         muneicon1.src ="homeMenue.png";
+          muneicon2.src ="diary.png";
+              muneicon3.src ="sticker.png";
+             muneicon4.src ="account.png";
+             
+         })
+      
+         muneicon2.addEventListener("click",function(){
+             muneicon1.src ="menuh.png";
+              muneicon2.src ="dairymenue.png";
+              muneicon3.src ="sticker.png";
+             muneicon4.src ="account.png";
+             
+             
+         })
+          muneicon3.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+              muneicon3.src ="stickermeune.png";
+                muneicon2.src ="diary.png";
+             muneicon4.src ="account.png";
+             
+         })
+           muneicon4.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+             muneicon3.src ="sticker.png";
+                muneicon2.src ="diary.png";
+               muneicon4.src ="accountmenue.png";
+             
+         })
+        
+    </script>
+</body>
+</html>

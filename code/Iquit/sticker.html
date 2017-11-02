@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>sticker</title>
+    <style>
+        body {
+            background-color: white;
+        }
+         #main_nav {
+           position: fixed;
+             left:0;
+             top:0;
+           width: 100vw;
+           background-color: #cc9519;
+           height: 150px;
+   
+       }
+         
+        #img1{
+            width: 250px;
+            position: absolute;
+            left: 5%;
+            top:12%;
+            margin: auto;
+        }
+        
+        #img2{
+            width: 250px;
+            position: absolute;
+            left: 40%;
+            top:12%;
+            margin: auto;
+        }
+        #img3{
+            width: 250px;
+            position: absolute;
+            left: 70%;
+            top:12%;
+            margin: auto;
+        }
+        
+        
+       #img4{
+            width: 250px;
+            position: absolute;
+            left: 5%;
+            top:30%;
+            margin: auto;
+        }
+        
+       #img5{
+            width: 250px;
+            position: absolute;
+            left: 40%;
+            top:30%;
+            margin: auto;
+        }
+        
+        #img6{
+            width: 250px;
+            position: absolute;
+            left: 70%;
+            top:30%;
+            margin: auto;
+        }
+         #img7{
+            width: 250px;
+            position: absolute;
+            left: 5%;
+            top:50%;
+            margin: auto;
+        }
+       #img8{
+            width: 250px;
+            position: absolute;
+            left: 40%;
+            top:50%;
+            margin: auto;
+        }
+        #img9{
+            width: 250px;
+            position: absolute;
+            left: 70%;
+            top:50%;
+            margin: auto;
+        }
+         #img10{
+            width: 250px;
+            position: absolute;
+            left: 5%;
+            top:70%;
+            margin: auto;
+        }
+        #img11{
+            width: 250px;
+            position: absolute;
+            left: 40%;
+            top:70%;
+            margin: auto;
+        }
+         #img12{
+            width: 250px;
+            position: absolute;
+            left: 70%;
+            top:70%;
+            margin: auto;
+        }
+        
+       #muneicon1{
+        width: 72px;
+         position: absolute;
+        bottom: 0%;
+        left: 10%;
+        
+    }
+    #muneicon2{
+        width: 60px;
+         position: absolute;
+        bottom: 0%;
+        left:34%;
+        
+    }
+    #muneicon3{
+        width: 63px;
+         position: absolute;
+        bottom: 0%;
+        left: 57%;
+        
+    }
+    #muneicon4{
+        width: 87px;
+         position: absolute;
+        bottom:0%;
+        left: 80%;
+        
+    }
+    #muneicon5{
+        width: 60px;
+         position: absolute;
+        bottom: 0%;
+        left: 5%;
+        
+    }
+    #muneicon6{
+        width: 60px;
+         position: absolute;
+        bottom: 0%;
+        right: 5%;
+        
+    }
+    </style>
+    </head>
+    <body>
+        <nav id="main_nav">
+        <div class="navigation" id="main_nav1">
+        
+            </div>
+        </nav>
+        
+        
+        <image id="img1" src ="1.png"></image>
+        <image id="img2" src ="2.png"></image>
+        <image id="img3" src ="3.png"></image>
+        
+        
+        
+        
+        <image id="img4" src ="4.png"></image>
+         <image id="img5" src ="5.png"></image>
+        <image id="img6" src ="6.png"></image>
+       
+       
+        
+        <image id="img7" src ="7.png"></image>
+        <image id="img8" src ="8.png"></image>
+        <image id="img9" src ="9.png"></image>
+        
+        
+    
+        <image id="img10" src ="10.png"></image>
+        <image id="img11" src ="11.png"></image>
+        <image id="img12" src ="12.png"></image>
+        
+        
+        <div>
+    <footer>    
+<ul id="footer">
+  <li><a class="active" href="homepage.html"><img src="menuh.png" id ="muneicon1"></a></li>
+  <li><a href="diary.html"> <img src="diary.png" id ="muneicon2"></a></li>
+  <li><a href= "sticker.html"><img src="sticker.png" id ="muneicon3"></a></li>
+  <li><a href="myaccount.html"><img src="account.png" id ="muneicon4"></a></li>
+</ul>
+    </footer>
+        </div>
+        <script>
+        var muneicon1 = document.getElementById("muneicon1");
+       var muneicon2 = document.getElementById("muneicon2");
+        var muneicon3 = document.getElementById("muneicon3");
+        var muneicon4 = document.getElementById("muneicon4");
+   
+     
+     
+    
+     muneicon1.addEventListener("click",function(){
+         muneicon1.src ="homeMenue.png";
+          muneicon2.src ="diary.png";
+              muneicon3.src ="sticker.png";
+       
+             
+         })
+      
+         muneicon2.addEventListener("click",function(){
+             muneicon1.src ="menuh.png";
+              muneicon2.src ="dairymenue.png";
+              muneicon3.src ="sticker.png";
+             muneicon4.src ="account.png";
+             
+             
+             
+         })
+          muneicon3.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+              muneicon3.src ="stickermeune.png";
+                muneicon2.src ="diary.png";
+             muneicon4.src ="account.png";
+            
+              
+             
+         })
+           muneicon4.addEventListener("click",function(){
+               muneicon1.src ="menuh.png";
+             muneicon3.src ="sticker.png";
+                muneicon2.src ="diary.png";
+               muneicon4.src ="accountmenue.png";
+             
+             
+         })
+        
+    </script>
+    </body>
+</html>
